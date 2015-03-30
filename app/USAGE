@@ -1,0 +1,12 @@
+Description:
+    Creates simple oars server.
+
+Example:
+    yo oars
+
+    This will create:
+        gulpfile.js: Configuration for the task runner.
+        package.json: Development packages installed by npm.
+
+        app/: Your application files.
+        test/: Unit tests for your application.

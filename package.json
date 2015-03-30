@@ -1,0 +1,32 @@
+{
+  "name": "generator-oars",
+  "version": "0.0.0",
+  "description": "Oars generator tools for node module oars.",
+  "files": [
+    "app",
+    "router"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Evilcome/generator-oars.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "oars"
+  ],
+  "author": "Evilcome",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evilcome/generator-oars/issues"
+  },
+  "homepage": "https://github.com/Evilcome/generator-oars",
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "yeoman-generator": "^0.18.10",
+    "yosay": "^1.0.3"
+  }
+}
