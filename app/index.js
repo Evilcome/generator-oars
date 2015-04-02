@@ -62,12 +62,30 @@ module.exports = yeoman.generators.Base.extend({
     app: function () {
       this.mkdir('api');
       this.mkdir('api/controllers');
-      this.mkdir('api/models');
+      this.copy('controllers/HomeController.js', 'api/controllers/HomeController.js');
+
       this.mkdir('api/policies');
+
       this.mkdir('api/responses');
+      this.copy('responses/ok.js', 'api/responses/ok.js');
+      this.copy('responses/notFound.js', 'api/responses/notFound.js');
+      this.copy('responses/forbidden.js', 'api/responses/forbidden.js');
+      this.copy('responses/badRequest.js', 'api/responses/badRequest.js');
+      this.copy('responses/serverError.js', 'api/responses/serverError.js');
+
       this.mkdir('api/services');
 
       this.mkdir('config');
+      this.copy('config/globals.js', 'config/globals.js');
+      this.copy('config/middleware.js', 'config/middleware.js');
+      this.copy('config/policies.js', 'config/policies.js');
+      this.copy('config/routes.js', 'config/routes.js');
+
+      this.mkdir('env');
+      this.copy('env/env.default.js', 'env/env.default.js');
+      this.copy('env/env.pre.prod.js', 'env/env.pre.prod.js');
+      this.copy('env/env.prod.js', 'env/env.prod.js');
+
       this.mkdir('tasks');
     }
   },
