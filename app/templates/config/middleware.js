@@ -23,10 +23,11 @@ module.exports.middleware = {
   ***************************************************************************/
 
   order: [
-    'authorizationParser',
+    'acceptParser',
     'queryParser',
     'bodyParser',
-    'CORS'
+    'CORS',
+    'myRequestLogger'
   ],
 
   /****************************************************************************
@@ -35,8 +36,8 @@ module.exports.middleware = {
   *                                                                           *
   ****************************************************************************/
 
-  // myRequestLogger: function (req, res, next) {
-  //     console.log("Requested :: ", req.method, req.url);
-  //     return next();
-  // },
+  myRequestLogger: function (req, res, next) {
+    console.log("Requested :: ", req.method, req.url);
+    return next();
+  }
 };

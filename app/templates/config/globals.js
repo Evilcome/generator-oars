@@ -1,6 +1,8 @@
 
 module.exports.globals = {
 
+  // restify: true,
+
   /****************************************************************************
   *                                                                           *
   * Expose the lodash installed in Sails core as a global variable. If this   *

@@ -82,9 +82,10 @@ module.exports = yeoman.generators.Base.extend({
       this.copy('config/routes.js', 'config/routes.js');
 
       this.mkdir('env');
-      this.copy('env/env.default.js', 'env/env.default.js');
-      this.copy('env/env.pre.prod.js', 'env/env.pre.prod.js');
-      this.copy('env/env.prod.js', 'env/env.prod.js');
+      this.copy('env/default.env', 'env/default.env');
+      this.copy('env/pre.prod.env', 'env/pre.prod.env');
+      this.copy('env/prod.env', 'env/prod.env');
+      this.copy('env/default.env', '.env');
 
       this.mkdir('tasks');
     }
