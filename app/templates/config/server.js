@@ -1,5 +1,5 @@
 
-module.exports.routes = {
+module.exports.server = {
 
 	// this will set the restify server's timeout
 	timeout: 10000,

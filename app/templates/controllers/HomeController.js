@@ -16,7 +16,7 @@ module.exports = {
 		}, function(err, results) {
 			if(err) return res.serverError(err);
 
-			res.ok({ say: 'hello.' });
+			res.send({ say: 'hello.' });
 		});
 	},
 
@@ -40,8 +40,12 @@ module.exports = {
 		}, function(err, results) {
 			if(err) return res.serverError(err);
 
-			res.ok({ say: 'hello world.' });
+			res.send({ say: 'hello world.' });
 		});
+	},
+
+	sayHi: function(req, res) {
+		res.send({ say: 'hi' });
 	}
 
 };
