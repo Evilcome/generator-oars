@@ -1,6 +1,6 @@
 {
   "name": "generator-oars",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Oars generator tools for node module oars.",
   "files": [
     "app",
