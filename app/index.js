@@ -66,13 +66,6 @@ module.exports = yeoman.generators.Base.extend({
 
       this.mkdir('api/policies');
 
-      this.mkdir('api/responses');
-      this.copy('responses/ok.js', 'api/responses/ok.js');
-      this.copy('responses/notFound.js', 'api/responses/notFound.js');
-      this.copy('responses/forbidden.js', 'api/responses/forbidden.js');
-      this.copy('responses/badRequest.js', 'api/responses/badRequest.js');
-      this.copy('responses/serverError.js', 'api/responses/serverError.js');
-
       this.mkdir('api/services');
 
       this.mkdir('config');
