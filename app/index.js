@@ -67,7 +67,7 @@ module.exports = yeoman.generators.Base.extend({
       this.copy('controllers/feature/TestController.js', 'api/controllers/feature/TestController.js');
 
       this.mkdir('api/policies');
-      this.copy('policies/sessionAuth.js', 'policies/sessionAuth.js');
+      this.copy('policies/sessionAuth.js', 'api/policies/sessionAuth.js');
 
       this.mkdir('api/services');
 
