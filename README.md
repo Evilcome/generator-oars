@@ -10,7 +10,7 @@ Oars generator tools for node module oars.
 - Install dependencies: `npm install --global yo bower`
 - Install the generator: `npm install --global generator-oars`
 - Run `yo oars` to scaffold your webapp
-- Run `npm start` to launch your webapp
+- Run `node index.js` to launch your webapp
 
 ## Options
 
