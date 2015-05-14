@@ -46,6 +46,10 @@ module.exports = {
 
 	sayHi: function(req, res) {
 		res.send({ say: 'hi' });
+	},
+
+	admin: function(req, res) {
+		res.send({ admin: true });
 	}
 
 };
